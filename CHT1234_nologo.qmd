@@ -151,7 +151,7 @@ Email: ghi.jkl@glasgow.ac.uk
   * 100% continuous assessment;
   
   
-## Overview of elements
+## Overview of components
 
 Due to the applied nature of the course there is no final exam and instead the course consists of 100% coursework. The course assessment takes the following structure and weighting.
 
@@ -164,7 +164,7 @@ Due to the applied nature of the course there is no final exam and instead the c
 
 : {.striped .hover}
 
-## More detailed breakdown -- and deadlines
+## More detailed breakdown -- Assessment and Feedback Calendar
 
 *Optional section if you want to provide deadline details*
 
