@@ -1,6 +1,6 @@
 ---
 title: |
-  Course Name Here -- Course Handbook ![](MandS-logo.png){#toplogo}
+  Course Name Here -- Course Handbook ![](MandS-logo.png){#toplogo fig-alt="Logo of Maths and Stats, University of Glasgow"}
 subtitle: "STATS1234 (Level M)"
 format:
   html: 
