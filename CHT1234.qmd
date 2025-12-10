@@ -9,6 +9,7 @@ format:
     toc-depth: 1
     css: styles.css
     embed-resources: true
+  docx: default
 ---
 # Course description
 
@@ -64,8 +65,9 @@ This course is provided through ... lectures and computer labs.
 
 All materials (documents, videos, labs, etc.) will be made available on the course Moodle page together with communications via the Announcements Forum and the Student Q&A Forum. 
 
-<!-- enforces a page break in docx version -->
-{{< pagebreak >}} 
+<!-- if you wish to enforce a page break in docx version anywhere -->
+<!-- then unhide the next line -->
+<!-- {{< pagebreak >}} -->
 
 ## Syllabus / Weekly breakdown
 
