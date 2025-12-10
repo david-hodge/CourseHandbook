@@ -19,6 +19,8 @@ format:
 
 Welcome to ... [insert introduction to course here]
 
+This is the [course catalogue entry for STATS1234](https://www.gla.ac.uk/coursecatalogue/course/?code=STATS1234).
+
 ## Course Aims
 
 This course aims to
