@@ -1,0 +1,189 @@
+---
+title: |
+  Course Name Here -- Course Handbook ![](MandS-logo.png){#toplogo}
+subtitle: "STATS1234 (Level M)"
+format:
+  html: 
+    toc: true
+    toc-location: right
+    toc-depth: 1
+    css: styles.css
+    embed-resources: true
+---
+# Course description
+
+*Delete this line -- you may also re-order the sections (reasonably)*
+
+## Introduction and summary
+
+Welcome to ... [insert introduction to course here]
+
+## Course Aims
+
+This course aims to
+
+- bullet
+
+- point
+
+- course
+
+- aims
+
+## Intended Learning Outcomes (ILOs)
+
+By the end of this course you will be able to:
+
+- bullet
+
+- point
+
+- learning
+
+- outcomes 
+
+# Timetable information
+
+  * Total lectures: 10 hours (Weeks 1 to 10)
+  * Total computer labs: 20 hours (2 hours Weeks 1 to 10)
+
+## Lectures
+
+  * Mondays at 9am-10am in Building XYZ Room 123 (Room Name)
+
+## Labs sessions
+
+  * Tuesdays at 10am-Midday in Building ABC Rooms 123 & 456
+
+
+# Course format
+
+This course is provided through ... lectures and computer labs.
+
+All materials (documents, videos, labs, etc.) will be made available on the course Moodle page together with communications via the Announcements Forum and the Student Q&A Forum. 
+
+<!-- enforces a page break in docx version -->
+{{< pagebreak >}} 
+
+## Syllabus / Weekly breakdown
+
+Detailed below is a provisional timetable for the on-campus sessions of the course (which is subject to change).
+
+*Sample table, you may just put a syllabus summary as paragraphs or bullets*
+
+| Week (w/b) | Lectures (Monday 09:00-10:00) | Labs (Tuesday 10:00-12:00) |
+|-----------|--------------------------------|-----------------------------|
+| **1 (12/01)** | Placeholder Topic | Placeholder Topic |
+| **2 (19/01)** | Placeholder Topic | Placeholder Topic |
+| **3 (26/01)** | Placeholder Topic | Placeholder Topic |
+| **4 (02/02)** | Placeholder Topic | Placeholder Topic |
+| **5 (09/02)** | Placeholder Topic | Placeholder Topic |
+| **6 (16/02)** | Placeholder Topic | Placeholder Topic |
+| **7 (23/02)** | Placeholder Topic | Placeholder Topic |
+| **8 (02/03)** | Placeholder Topic | Placeholder Topic |
+| **9 (09/03)** | Placeholder Topic | Placeholder Topic |
+| **10 (16/03)** | Placeholder Topic | Placeholder Topic |
+| **11 (23/03)** | Placeholder Topic | Placeholder Topic |
+
+: {.striped .hover}
+
+## Learning and Teaching Methods
+
+*Optional - taken from PIP*
+
+```{r setup-gt, include=FALSE}
+library(gt)
+
+# Another option for making tables...
+make_gt_table <- function(df) {
+  gt(df) %>%
+    #tab_header(title = "Learning and Teaching Methods") %>%
+    sub_missing(
+      columns = everything(),
+      missing_text = "Not Applicable"
+    ) %>%
+    cols_align(
+      align = "left",
+      columns = 1   # first column (Method)
+    ) %>% 
+    cols_align(
+      align = "right",
+      columns = 2:3 # second and third columns (numbers)
+    ) %>% 
+    cols_width(
+      everything() ~ gt::pct(30)
+    ) %>% 
+    tab_style(
+      style = cell_text(weight = "bold"), 
+      locations = cells_column_labels(everything())
+    )
+}
+
+```
+
+```{r, echo=FALSE}
+methods <- data.frame(
+  Method = c("Seminar", "Practical Classes and Workshops", "Guided Independent Study"),
+  `Formal Contact Hours` = c(10, 20, NA),
+  `Notional Learning Hours (including formal contact hours)` = c(10, 20, 64),
+  check.names = FALSE
+)
+make_gt_table(methods)
+```
+
+# Lecturing staff
+
+## Lecturer 1
+
+Office: Room 123, Maths & Stats  
+Email: abc.def@glasgow.ac.uk
+
+## Lecturer 2
+
+Office: Room 456, Maths & Stats  
+Email: ghi.jkl@glasgow.ac.uk
+
+# Assessment
+
+## Summary
+
+  * 100% continuous assessment;
+  
+  
+## Overview of elements
+
+Due to the applied nature of the course there is no final exam and instead the course consists of 100% coursework. The course assessment takes the following structure and weighting.
+
+| Assessment | Weight |
+|------------|--------|
+| Sample Assessment 1 | 15% |
+| Sample Assessment 2 | 25% |
+| Sample Assessment 3 | 25% |
+| Sample Assessment 4 | 35% |
+
+: {.striped .hover}
+
+## More detailed breakdown -- and deadlines
+
+*Optional section if you want to provide deadline details*
+
+| Assessment | Weight | Available from... | Due in by... | Feedback by... |
+|------------|--------|-------------------|--------------|---------------|
+| Sample Assessment 1 | XX% | Placeholder Date | Placeholder Date | Placeholder Date |
+| Sample Assessment 2 | XX% | Placeholder Date | Placeholder Date | Placeholder Date |
+| Sample Assessment 3 | XX% | Placeholder Date | Placeholder Date | Placeholder Date |
+| Sample Assessment 4 | XX% | Placeholder Date | Placeholder Date | Placeholder Date |
+
+: {.striped .hover tbl-colwidths="[18,10,22,22,17]"}
+
+## Methods
+
+*Optional for further assessment description*
+
+Further details could go here about assessment methodology if required.
+
+## Re-assessment
+
+Please consult the official reassessment rules applicable to all courses. See [Assessment Guide Website](https://www.gla.ac.uk/myglasgow/apg/policies/assessment/codeofassessment/guide/introduction/)
+
+*Put here any special comments specific to this course -- maybe some element's reassessment is different somewhow*

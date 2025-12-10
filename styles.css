@@ -1,0 +1,63 @@
+:root {
+  --university-blue: #003865;
+  --burgundy:        #7d2239;
+  --cobalt:          #0075b0;
+  --lavender:        #5b4d94;
+  --leaf:            #00843d;
+  --moss:            #385a4f;
+  --pillarbox:       #b30c00;
+  --rust:            #be4d00;
+  --sandstone:       #7a6855;
+  --sky-blue:        #005398;
+  --slate:           #4f5961;
+  --thistle:         #951272;
+}
+
+h1, title {
+  color: var(--university-blue);
+}
+
+h2 {
+  font-size: 120%;
+  color: var(--sky-blue);
+}
+
+/* Add a logo via the title block in the qmd like this:
+
+title: |
+  Data Analysis Skills -- Course Handbook ![](MandS-logo.png){#toplogo} 
+
+*/
+
+/* Styling for the logo
+Turn title <p> into a flex box to allow nice positioning */
+
+p:has(#toplogo) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0; /* Don't leave vertical space before subtitle */
+}
+
+#toplogo {
+  width: 100px;
+  height: auto;
+  margin-left: 15px;
+}
+
+/* Narrow screens: logo above, title left-aligned */
+@media (max-width: 600px) {
+  p:has(#toplogo) {
+    flex-direction: column-reverse; /* reverse order */
+    align-items: flex-start; /* left align */
+  }
+
+  #toplogo {
+    margin: 0 0 0.5em 0; /* small space below logo */
+  }
+}
+
+/* Reduce white space above subtitle */
+.quarto-title p.subtitle {
+  margin-top: 0;
+}
