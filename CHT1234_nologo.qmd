@@ -95,45 +95,11 @@ Detailed below is a provisional timetable for the on-campus sessions of the cour
 
 *Optional - taken from PIP*
 
-```{r setup-gt, include=FALSE}
-library(gt)
-
-# Another option for making tables...
-make_gt_table <- function(df) {
-  gt(df) %>%
-    #tab_header(title = "Learning and Teaching Methods") %>%
-    sub_missing(
-      columns = everything(),
-      missing_text = "Not Applicable"
-    ) %>%
-    cols_align(
-      align = "left",
-      columns = 1   # first column (Method)
-    ) %>% 
-    cols_align(
-      align = "right",
-      columns = 2:3 # second and third columns (numbers)
-    ) %>% 
-    cols_width(
-      everything() ~ gt::pct(30)
-    ) %>% 
-    tab_style(
-      style = cell_text(weight = "bold"), 
-      locations = cells_column_labels(everything())
-    )
-}
-
-```
-
-```{r, echo=FALSE}
-methods <- data.frame(
-  Method = c("Seminar", "Practical Classes and Workshops", "Guided Independent Study"),
-  `Formal Contact Hours` = c(10, 20, NA),
-  `Notional Learning Hours (including formal contact hours)` = c(10, 20, 64),
-  check.names = FALSE
-)
-make_gt_table(methods)
-```
+| Method | Formal Contact Hours | Notional Learning Hours (informal contact hours) |
+|------------|-------|-------|
+| Seminar | 10 | 10 |
+| Practical Classes and Workshops | 20 | 20 |
+| Guided Independent Study | Not Applicable | 64 |
 
 # Lecturing staff
 
